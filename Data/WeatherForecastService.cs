@@ -1,11 +1,18 @@
 namespace MyBlazorServerApp.Data
 {
-    public class WeatherForecastService
+    public interface IWeatherForecastService
     {
+        public Task<WeatherForecast[]> GetForecastAsync(DateOnly startDate);
+    }
+
+    public class WeatherForecastService : IWeatherForecastService
+    {
+
         private static readonly string[] Summaries = new[]
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
+
 
         public Task<WeatherForecast[]> GetForecastAsync(DateOnly startDate)
         {
