@@ -1,4 +1,10 @@
-﻿### Use of interface in Data Services
+﻿### Add Page WeatherForcaste
+
+* To use EditForm capabilities of Blazor binding a form on a Model
+
+<img style="margin: 10px" src="Images/2023-02-23_11h26_48.png" alt="TemplateVisualStudio Ribbon transform Icon Image" />
+
+### Use of interface in Data Services
 
 * To separate Code from Fetch Data View
 
