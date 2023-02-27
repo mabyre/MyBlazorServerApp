@@ -1,8 +1,7 @@
-﻿### Add Page WeatherForcaste
+﻿
+### Separate Code and View
 
-* To use EditForm capabilities of Blazor binding a form on a Model
-
-<img style="margin: 10px" src="Images/2023-02-23_11h26_48.png" alt="TemplateVisualStudio Ribbon transform Icon Image" />
+* Look in Pages/Counter seperate by derivate from ComponentBase
 
 ### Use of interface in Data Services
 
@@ -13,7 +12,13 @@ Can be useful if another Razor page would like to display Weather data
 ### Add a TodoList
 
 * Sample ToDoList in Balzor
+* 
+* ### Add Page WeatherForcaste
 
-### Separate Code and View
+* To use EditForm capabilities of Blazor binding a form on a Model
 
-* Look in Pages/Counter seperate by derivate from ComponentBase
+<img style="margin: 10px" src="Images/2023-02-23_11h26_48.png" alt="TemplateVisualStudio Ribbon transform Icon Image" />
+
+### Creation of Class Razor Librairie
+
+First I had to find how to use "git move" to move this project to a subdirectory then to add the class blazor librairy
