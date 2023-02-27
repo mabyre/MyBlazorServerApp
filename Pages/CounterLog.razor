@@ -1,0 +1,23 @@
+﻿<!--
+    Declare ILogger<Counter> direct in .cs seams difficult see Counter.razor 
+    which declare an ILoggerFactory
+-->
+@page "/CounterLog"
+@inject ILogger<Counter> logger
+
+<PageTitle>Counter + Log</PageTitle>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        logger.LogWarning("Someone has clicked me!");
+
+        currentCount++;
+    }
+}
