@@ -1,0 +1,42 @@
+﻿<!--
+    Dynamically-rendered ASP.NET Core Razor components:
+    https://learn.microsoft.com/en-us/aspnet/core/blazor/components/dynamiccomponent?view=aspnetcore-7.0
+-->
+@page "/dynamiccomponent-example-1"
+
+<h1><code>DynamicComponent</code> Component Example 1</h1>
+
+<p>
+    <label>
+        Select your transport:
+        <select @onchange="OnDropdownChange">
+            <option value="">Select a value</option>
+            <option value="@nameof(RocketLab)">Rocket Lab</option>
+            <option value="@nameof(SpaceX)">SpaceX</option>
+            <option value="@nameof(UnitedLaunchAlliance)">ULA</option>
+        </select>
+    </label>
+</p>
+
+@if (selectedType is not null)
+{
+    <div class="border border-primary my-1 p-1">
+        <DynamicComponent Type="@selectedType" />
+    </div>
+}
+else
+{
+    <div class="border border-primary my-1 p-1">
+        Please select the way you want to navigate into the Space.
+    </div>
+}
+
+@code {
+    private Type? selectedType;
+
+    private void OnDropdownChange(ChangeEventArgs e)
+    {
+        selectedType = e.Value?.ToString()?.Length > 0 ?
+            Type.GetType($"MyBlazorServerApp.Shared.{e.Value}") : null;
+    }
+}
