@@ -1,0 +1,23 @@
+﻿<!--
+    Comes from:
+    https://learn.microsoft.com/fr-fr/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-7.0#navlink-and-navmenu-components
+-->
+@page "/nav-handler"
+
+<PageTitle>nav-handler</PageTitle>
+
+<p>
+    <button @onclick="@(() => Navigation.NavigateTo("/"))">
+        Home (Allowed)
+    </button>
+    <button @onclick="@(() => Navigation.NavigateTo("/counter"))">
+        Counter (Prevented)
+    </button>
+</p>
+
+@if (isPrevent is true)
+{
+    <div class="border border-primary my-1 p-1">
+        Navigation has been prevented!
+    </div>
+}
