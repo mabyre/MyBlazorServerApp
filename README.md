@@ -45,6 +45,10 @@ I say "Html component" because there is no much more in those Blazor Component s
 
 So easy to use \MyBlazorServerApp\wwwroot\appsettings.json
 
+See Page :
+
+[ConfigurationExample](https://github.com/mabyre/MyBlazorServerApp/blob/master/Pages/ConfigurationExample.razor)
+
 ```json
 {
   "h1FontSize": "50px"
