@@ -41,9 +41,25 @@ Dynamicly change the html content using **DynamicComponent** to load html Blazor
 
 I say "Html component" because there is no much more in those Blazor Component sample shoud be enhanced.
 
+## Use of appsettings.json
+
+So easy to use \MyBlazorServerApp\wwwroot\appsettings.json
+
+```json
+{
+  "h1FontSize": "50px"
+}
+```
+
+```html
+<h1 style="font-size:@Configuration["h1FontSize"]">
+    Configuration example
+</h1>
+```
+
 ## Counter now demonstrate the use of ILogger in code behing
 
-The use of ILoggerFactory and ILogger in code-behind.
+The use of **ILoggerFactory** and **ILogger** in **code-behind**.
 
 ```csharp
     [Inject]
