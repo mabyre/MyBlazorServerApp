@@ -13,12 +13,32 @@ public class CounterBase : ComponentBase
     [Inject]
     protected ILoggerFactory loggerFactory { get; set; }
 
-    protected void IncrementCount()
+    private ILogger<CounterBase> logger => loggerFactory.CreateLogger<CounterBase>();
+
+    private string message = "Initial assigned message.";
+
+    protected void ButtonCounterOnClick()
     {
         currentCount += ValueCounter;
-
-        var logger = loggerFactory.CreateLogger<CounterBase>();
         logger.LogWarning("Someone has clicked me!");
-
     }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        logger.LogInformation("OnAfterRender(1): firstRender: " +
+            "{FirstRender}, message: {Message}", firstRender, message);
+
+        if (firstRender)
+        {
+            message = "Executed for the first render.";
+        }
+        else
+        {
+            message = "Executed after the first render.";
+        }
+
+        logger.LogInformation("OnAfterRender(2): firstRender: " +
+            "{FirstRender}, message: {Message}", firstRender, message);
+    }
+
 }
