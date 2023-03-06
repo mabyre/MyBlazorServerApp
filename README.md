@@ -72,6 +72,10 @@ The use of **ILoggerFactory** and **ILogger** in **code-behind**.
     private ILogger<CounterBase> logger => loggerFactory.CreateLogger<CounterBase>();
 ```
 
+## Counter Save use of ProtectedBrowserStorage
+
+Sate Management in Blazor Web App
+
 
 
 
