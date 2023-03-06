@@ -7,8 +7,7 @@ public class CounterBase : ComponentBase
 {
     protected int currentCount = 0;
 
-    [Parameter]
-    public int ValueCounter { get; set; } = 2;
+    public int valueCounter = 2;
 
     [Inject]
     protected ILoggerFactory loggerFactory { get; set; }
@@ -19,7 +18,7 @@ public class CounterBase : ComponentBase
 
     protected void ButtonCounterOnClick()
     {
-        currentCount += ValueCounter;
+        currentCount += valueCounter;
         logger.LogWarning("Someone has clicked me!");
     }
 
