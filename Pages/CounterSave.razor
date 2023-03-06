@@ -1,0 +1,16 @@
+﻿<!--
+	From :
+	https://learn.microsoft.com/fr-fr/aspnet/core/blazor/state-management?source=recommendations&view=aspnetcore-7.0&pivots=server
+-->
+@page "/counter-save"
+@inherits CounterSaveBase
+
+<PageTitle>Counter Save</PageTitle>
+
+<h1>Counter</h1>
+
+<p>Use of <strong>ProtectedBrowserStorage</strong> to store user's data on server.</p>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick=ButtonCounterOnClickAsync>Click me</button>
