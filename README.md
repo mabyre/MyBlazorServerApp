@@ -139,6 +139,10 @@ To avoid i should do this :
 
 [Commit](https://github.com/mabyre/MyBlazorServerApp/commit/c62f9874afdb84492a011e73e9f398afd3a6ac7c)
 
+I suppose that it's because counter is the name of the main menu so counter-save will not be trate **To Be Confirmed**
+
+---
+
 [:arrow_up_small: Top of page](https://github.com/mabyre/MyBlazorServerApp#my-blazor-server-app)
 
 
