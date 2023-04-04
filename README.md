@@ -131,7 +131,9 @@ I had a Bug !
 
 <img style="margin: 10px" src="Images/2023-04-04_18h01_42.png" alt="Add NavLink Submenu" />
 
+To avoid i should do this :
 
+[Commit](https://github.com/mabyre/MyBlazorServerApp/commit/c62f9874afdb84492a011e73e9f398afd3a6ac7c)
 
 
 
