@@ -99,6 +99,10 @@ Sate Management in Blazor Web App
 
 ## Create NavLink as SubMenu
 
+### Reference
+
+- [ASP.NET Core Blazor routing and navigation](https://learn.microsoft.com/en-us/aspnet/core/blazor/fundamentals/routing?view=aspnetcore-7.0#navlink-and-navmenu-components)
+
 This is useful when the application grows and the menus are multiplying.
 
 ```razor
