@@ -32,13 +32,17 @@ Can be useful if another Razor page would like to display Weather data
 
 ## Add a TodoList
 
-Sample ToDoList in Balzor
+Sample ToDoList in Balzor :
+
+<img style="margin: 10px" src="Images/2023-04-04_18h46_41.png" alt="Todo List in Blazor is very nice" />
+
+Yes I find it very cool and efficent
  
 ## Add Page WeatherForcaste
 
 * To use EditForm capabilities of Blazor binding a form on a Model
 
-<img style="margin: 10px" src="Images/2023-02-23_11h26_48.png" alt="TemplateVisualStudio Ribbon transform Icon Image" />
+<img style="margin: 10px" src="Images/2023-02-23_11h26_48.png" alt="" />
 
 ## Creation of Class Razor Librairie
 
@@ -60,7 +64,7 @@ So easy to use \MyBlazorServerApp\wwwroot\appsettings.json
 
 See Page :
 
-[ConfigurationExample](https://github.com/mabyre/MyBlazorServerApp/blob/master/Pages/ConfigurationExample.razor)
+[ConfigurationExample.razor](https://github.com/mabyre/MyBlazorServerApp/blob/master/Pages/ConfigurationExample.razor)
 
 ```json
 {
