@@ -11,7 +11,8 @@ My Sample Balzor App to demonstate cherry picked code, that I want to look at, m
 - [Add Page WeatherForcaste](#Add-Page-WeatherForcaste)
 - [Creation of Class Razor Librairie](#Creation-of-Class-Razor-Librairie)
 - [Blazor Dynamic Component](#Blazor-Dynamic-Component)
-- [Use of appsettings.json](#Use-of-appsettings.json)
+- [NavHandler use of OnAfterRender](#NavHandler-use-of-OnAfterRender)
+- [Use of appsettings.json](#Use-of-appsettingsjson)
 - [Counter now demonstrate the use of ILogger in code behing](#Counter-now-demonstrate-the-use-of-ILogger-in-code-behing)
 
 ## Separate Code and View
@@ -71,6 +72,10 @@ See Page :
     Configuration example
 </h1>
 ```
+
+## NavHandler use of OnAfterRender
+
+To allow or prevent navigation
 
 ## Counter now demonstrate the use of ILogger in code behing
 
