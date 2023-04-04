@@ -92,6 +92,37 @@ The use of **ILoggerFactory** and **ILogger** in **code-behind**.
 
 Sate Management in Blazor Web App
 
+## Create NavLink as SubMenu
+
+This is useful when the application grows and the menus are multiplying.
+
+```razor
+    <div class="nav-item px-3">
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+        <NavLink class="nav-link" href="" Match="NavLinkMatch.All" @onclick="()=>expandSubMenuHome = !expandSubMenuHome">
+            <span class="oi oi-home" aria-hidden="true"></span> Home
+        </NavLink>
+    </div>
+    <div class="nav-item px-3">
+    @if (expandSubMenuHome)
+    {
+        <div class="nav-item px-5">
+            <NavLink class="nav-link" href="index">
+                <span class="oi oi-home" aria-hidden="true"></span> To Home
+            </NavLink>
+            <NavLink class="nav-link" href="fetchdata">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+            </NavLink>
+        </div>
+    }
+
+@code {
+
+    // --- Navigate to SubMenu
+
+    private bool expandSubMenuHome = false;
+}
+```
 
 
 
