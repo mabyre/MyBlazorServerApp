@@ -14,6 +14,7 @@ My Sample Balzor App to demonstate cherry picked code, that I want to look at, m
 - [NavHandler use of OnAfterRender](#NavHandler-use-of-OnAfterRender)
 - [Use of appsettings.json](#Use-of-appsettingsjson)
 - [Counter now demonstrate the use of ILogger in code behing](#Counter-now-demonstrate-the-use-of-ILogger-in-code-behing)
+- [Create NavLink as SubMenu](#Create-NavLink-as-SubMenu)
 
 ## Separate Code and View
 
@@ -118,11 +119,19 @@ This is useful when the application grows and the menus are multiplying.
 
 @code {
 
-    // --- Navigate to SubMenu
+    // --- Expand Navlink SubMenu
 
     private bool expandSubMenuHome = false;
 }
 ```
+
+[Commit](https://github.com/mabyre/MyBlazorServerApp/commit/a17cbb1bb01d461b2d8ba12008241ae932eedbb6)
+
+I had a Bug !
+
+<img style="margin: 10px" src="Images/2023-04-04_18h01_42.png" alt="Add NavLink Submenu" />
+
+
 
 
 
