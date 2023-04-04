@@ -3,6 +3,17 @@
 
 My Sample Balzor App to demonstate cherry picked code, that I want to look at, make it mine.
 
+## Summary
+
+- [Separate Code and View](#Separate-Code-and-View)
+- [Use of interface in Data Services](#Use-of-interface-in-Data-Services)
+- [Add a TodoList](#Add-a-TodoList)
+- [Add Page WeatherForcaste](#Add-Page-WeatherForcaste)
+- [Creation of Class Razor Librairie](#Creation-of-Class-Razor-Librairie)
+- [Blazor Dynamic Component](#Blazor-Dynamic-Component)
+- [Use of appsettings.json](#Use-of-appsettings.json)
+- [Counter now demonstrate the use of ILogger in code behing](#Counter-now-demonstrate-the-use-of-ILogger-in-code-behing)
+
 ## Separate Code and View
 
 * Look in Pages/Counter code is seperate by derivate from ComponentBase
