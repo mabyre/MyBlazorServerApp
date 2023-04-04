@@ -135,6 +135,6 @@ To avoid i should do this :
 
 [Commit](https://github.com/mabyre/MyBlazorServerApp/commit/c62f9874afdb84492a011e73e9f398afd3a6ac7c)
 
-
+[:arrow_up_small:Top](https://github.com/mabyre/MyBlazorServerApp#my-blazor-server-app)
 
 
