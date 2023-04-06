@@ -18,11 +18,15 @@ My Sample Balzor App to demonstate cherry picked code, that I want to look at, m
 
 ## Separate Code and View
 
-* Look in Pages/Counter code is seperate by derivate from ComponentBase
+* Look in Pages/Counter code is seperate by derivate from ComponentBase and the use of @inherits CounterBase in razor page.
 
 At the begining, after using this, I gave up cause of numerous waste of time due to variables private not protected forgotten. I know use the template wich is a partial class less time wasted.
 
-If we needed secure component most use this way of code-behind with **@inherits CounterBase**.
+If we needed secure component may be most use this way of code-behind with **@inherits CounterBase** and rename the ***private*** variables to ***protected***.
+
+Ask [Christophe Mommer](https://hts-learning.com/shop/course/infos/blazor-server)
+
+See [Accessibility Levels](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/accessibility-levels)
 
 ## Use of interface in Data Services
 
