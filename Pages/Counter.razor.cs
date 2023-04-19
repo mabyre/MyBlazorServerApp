@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.Extensions.Logging;
+using Tools.Logger;
 
 namespace MyBlazorServerApp.Pages;
 
@@ -16,10 +17,27 @@ public class CounterBase : ComponentBase
 
     private string message = "Initial assigned message.";
 
-    protected void ButtonCounterOnClick()
+    FileLogger file = new FileLogger("Log.txt");
+
+    protected override void OnInitialized()
+    {
+        Logger.WriteMessage += LoggingMethods.LogToConsole;
+        Logger.WriteMessage += LoggingMethods.LogToTrace;
+        Logger.LogLevel = Severity.Verbose; // by default set to Warning
+    }
+
+    protected void OnClickButtonCounter()
     {
         currentCount += valueCounter;
         logger.LogWarning("Someone has clicked me!");
+    }
+
+    protected void OnClickButtonLog()
+    {
+        currentCount += valueCounter;
+        logger.LogWarning("Someone has clicked me!");
+
+        Logger.LogMessage(Severity.Verbose, "UserControl1", "Click on Trace");
     }
 
     protected override void OnAfterRender(bool firstRender)
