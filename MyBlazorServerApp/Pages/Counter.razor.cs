@@ -17,7 +17,7 @@ public class CounterBase : ComponentBase
 
     private string message = "Initial assigned message.";
 
-    FileLogger file = new FileLogger("Log.txt");
+    Tools.Logger.FileLogger file = new Tools.Logger.FileLogger("Log.txt");
 
     protected override void OnInitialized()
     {

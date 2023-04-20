@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using MyBlazorServerApp.Data;
+using FileLogger.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<IWeatherForecastService, WeatherForecastService>();
+
+// File Logging Provider
+builder.Logging.AddFileLogger();
 
 var app = builder.Build();
 
