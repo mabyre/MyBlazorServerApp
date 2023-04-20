@@ -15,6 +15,7 @@ My Sample Balzor App to demonstate cherry picked code, that I want to look at, m
 - [Use of appsettings.json](#Use-of-appsettingsjson)
 - [Counter now demonstrate the use of ILogger in code behing](#Counter-now-demonstrate-the-use-of-ILogger-in-code-behing)
 - [Create NavLink as SubMenu](#Create-NavLink-as-SubMenu)
+- [Use of submodule FileLogger.Logging](#Use-of-submodule-FileLoggerLogging)
 
 ## Separate Code and View
 
@@ -148,6 +149,13 @@ To avoid i should do this :
 [Commit](https://github.com/mabyre/MyBlazorServerApp/commit/c62f9874afdb84492a011e73e9f398afd3a6ac7c)
 
 I suppose that it's because counter is the name of the main menu so counter-save will not be trate **To Be Confirmed**
+
+## Use of submodule FileLogger.Logging
+Now use the submodule FileLogger to make logs in file. Adding a page PageFileLog to make logs and display the log file content.
+
+<img style="margin: 10px" src="Images/2023-04-20_11h57_58.png" alt="Add NavLink Submenu" />
+
+It's a very cool stuff because now you can have a look to what's happening into you Blazor Server Application.
 
 ---
 
